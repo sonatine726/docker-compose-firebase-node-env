@@ -9,4 +9,5 @@ COPY docker-entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/docker-entrypoint.sh
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-CMD ["/bin/sh"]
+CMD ["bash"]
+EXPOSE 4000 5001
