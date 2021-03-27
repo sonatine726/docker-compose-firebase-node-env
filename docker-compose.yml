@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  node:
+    build: .
+    volumes:
+      - .:/myapp
+    stdin_open: true
+    tty: true
