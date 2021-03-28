@@ -1,4 +1,4 @@
-FROM node:15.10.0
+FROM node:12.21.0
 
 WORKDIR /myapp
 RUN yarn global add typescript@^4.2.3
@@ -10,4 +10,4 @@ RUN chmod +x /usr/bin/docker-entrypoint.sh
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 CMD ["bash"]
-EXPOSE 4000 5001
+EXPOSE 4000 5000 5001
